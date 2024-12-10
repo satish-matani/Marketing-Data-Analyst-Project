@@ -6,23 +6,21 @@ The goal of this project was to address the challenges faced by a marketing team
 ## Technical Approach
 
 ### SQL
-* Data Extraction: Used SQL to fetch data from the customer_reviews table in a Microsoft SQL Server database, including key attributes such as ReviewID, CustomerID, ProductID, ReviewDate, Rating, and ReviewText.
+* Data Extraction: Used SQL to fetch data from the `customer_reviews` table in a Microsoft SQL Server database, including key attributes such as ReviewID, CustomerID, ProductID, ReviewDate, Rating, and ReviewText.
 * Window Functions: Leveraged SQL window functions like ROW_NUMBER(), RANK(), and PARTITION BY to calculate running totals and rankings across products based on customer ratings. This helped identify high-performing products and customer engagement trends.
 * Aggregation & Joins: Aggregated review data and joined multiple tables to correlate customer sentiment with product attributes.
 
 ### Python
-* Fetched data from SQL Server using SQLAlchemy.
-* Cleaned and preprocessed data using Pandas.
-* Performed sentiment analysis using VADER from NLTK.
-* Categorized sentiment scores and engineered a `SentimentBucket` feature.
-* Exported processed data to a CSV file.
+* Data Fetching & Preprocessing: Utilized SQLAlchemy to fetch data from the SQL Server database, and employed Pandas for data manipulation and cleaning.
+* Sentiment Analysis: Implemented sentiment analysis using Python’s VADER sentiment analysis model from the nltk library. The sentiment scores were calculated for each customer review text and categorized into Positive, Mixed Positive, Negative, and Mixed Negative categories based on both sentiment score and the review rating.
+* Feature Engineering: Introduced a SentimentBucket feature to categorize sentiment scores into defined ranges, helping identify the intensity of customer sentiment (e.g., strongly positive, mildly negative).
+* Data Export: Exported the processed data with sentiment categories to a CSV file for further analysis and reporting.
 
 ### Power BI
-* Imported cleaned data from the CSV file.
-* Transformed data within Power Query.
-* Built dynamic KPIs using DAX.
-* Designed visualizations like bar charts, pie charts, and sentiment distribution histograms.
-* Incorporated slicers and filters for interactive analysis.
+* Data Import & Transformation: Imported cleaned data into Power BI using the CSV output from Python. Transformed data within Power Query for better performance and ease of use.
+* Key Metrics & KPIs: Built dynamic KPIs using DAX to display metrics like average customer sentiment, top-rated products, and total reviews per product.
+* Visualizations: Designed multiple visualizations such as bar charts, pie charts, and sentiment distribution histograms to represent customer sentiment and engagement across different products.
+* Interactivity: Incorporated slicers and filters to allow marketing managers to drill down into product-specific reviews and sentiment data.
 
 ## Conclusion
-By combining SQL, Python, and Power BI, this project provided actionable insights into customer sentiments, enabling the marketing team to make informed decisions aimed at improving customer satisfaction and driving product sales.
+In this project, I employed SQL for efficient data extraction and transformation, Python for deep sentiment analysis and feature engineering, and Power BI for building interactive dashboards. These combined techniques provided actionable insights into customer sentiments, enabling the marketing team to make informed decisions aimed at improving customer satisfaction and driving product sales.
