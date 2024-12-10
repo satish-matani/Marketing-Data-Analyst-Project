@@ -1,14 +1,14 @@
 # Marketing Data Analyst Project
 
 ## Business Problem
-The goal of this project was to address the challenges faced by a marketing team in improving customer engagement and optimizing product sales. The primary business problem involved analyzing customer reviews and sentiment to gain insights into customer satisfaction. These insights could then be used to enhance product offerings and marketing strategies.
+The goal of this project was to address the challenges faced by a marketing team in improving customer engagement and optimizing product sales. The primary business problem involved analyzing customer reviews and sentiment to gain insights into customer satisfaction. These insights could then be used to enhance product offerings and marketing strategies. The project was developed using SQL, Python, and Power BI to clean, process, and visualize data that drives marketing decisions.
 
 ## Technical Approach
 
 ### SQL
-* Extracted key data from the `customer_reviews` table.
-* Utilized window functions to calculate running totals and rankings.
-* Aggregated review data and joined multiple tables.
+* Data Extraction: Used SQL to fetch data from the customer_reviews table in a Microsoft SQL Server database, including key attributes such as ReviewID, CustomerID, ProductID, ReviewDate, Rating, and ReviewText.
+* Window Functions: Leveraged SQL window functions like ROW_NUMBER(), RANK(), and PARTITION BY to calculate running totals and rankings across products based on customer ratings. This helped identify high-performing products and customer engagement trends.
+* Aggregation & Joins: Aggregated review data and joined multiple tables to correlate customer sentiment with product attributes.
 
 ### Python
 * Fetched data from SQL Server using SQLAlchemy.
