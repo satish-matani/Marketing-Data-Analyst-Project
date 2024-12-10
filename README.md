@@ -23,4 +23,4 @@ The goal of this project was to address the challenges faced by a marketing team
 * Interactivity: Incorporated slicers and filters to allow marketing managers to drill down into product-specific reviews and sentiment data.
 
 ## Conclusion
-In this project, I employed SQL for efficient data extraction and transformation, Python for deep sentiment analysis and feature engineering, and Power BI for building interactive dashboards. These combined techniques provided actionable insights into customer sentiments, enabling the marketing team to make informed decisions aimed at improving customer satisfaction and driving product sales.
+In this project, I employed SQL for efficient data extraction and transformation, Python for deep sentiment analysis and feature engineering, and Power BI for building interactive dashboard. These combined techniques provided actionable insights into customer sentiments, enabling the marketing team to make informed decisions aimed at improving customer satisfaction and driving product sales.
